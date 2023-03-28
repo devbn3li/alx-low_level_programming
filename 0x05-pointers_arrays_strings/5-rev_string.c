@@ -22,3 +22,4 @@ void rev_string(char *s)
 		s[counter] = rev;
 	}
 }
+ 
