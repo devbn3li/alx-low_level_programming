@@ -1,18 +1,24 @@
 #include "main.h"
-#include <stdio.h>
-
 /**
- * main - check the code for
- *
- * Return: Always 0.
+ * leet - encode into 1337speak
+ * @n: input value
+ * Return: n value
  */
-int main(void)
+char *leet(char *n)
 {
-	char s[] = "Expect the best. Prepare for the worst. Capitalize on what comes.\n";
-	char *p;
+	int i, j;
+	char s1[] = "aAeEoOtTlL";
+	char s2[] = "4433007711";
 
-	p = leet(s);
-	printf("%s", p);
-	printf("%s", s);
-	return (0);
+	for (i = 0; n[i] != '\0'; i++)
+	{
+		for (j = 0; j < 10; j++)
+		{
+			if (n[i] == s1[j])
+			{
+				n[i] = s2[j];
+			}
+		}
+	}
+	return (n);
 }
