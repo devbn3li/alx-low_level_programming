@@ -4,4 +4,4 @@
 gcc -c *.c
 
 # Create static library from object files
-ar rcs liball.a *.o
+ar rc liball.a *.o
