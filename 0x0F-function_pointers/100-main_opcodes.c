@@ -8,6 +8,9 @@
  *
  * Return: Always 0.
  */
+#include <stdio.h>
+#include <stdlib.h>
+
 int main(int argc, char **argv)
 {
     if (argc != 2)
@@ -25,8 +28,9 @@ int main(int argc, char **argv)
     }
 
     unsigned char *p = (unsigned char *)&main;
+    int i;
 
-    for (int i = 0; i < num_bytes; i++)
+    for (i = 0; i < num_bytes; i++)
     {
         printf("%02x ", *p);
         p++;
