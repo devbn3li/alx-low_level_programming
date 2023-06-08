@@ -1,5 +1,5 @@
 /**
- * _is_prime_number - check prime number
+ * prime_number - check prime number
  * @n: num to check it
  * @k: fac
  *
