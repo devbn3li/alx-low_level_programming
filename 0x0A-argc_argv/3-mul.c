@@ -1,6 +1,9 @@
 #include <stdio.h>
 /**
- *
+ * main - program that multiplies two numbers.
+ * @argc: arg count
+ * @argv: arg vector
+ * Return: 0 if success
  */
 int main(int argc, char *argv[])
 {
