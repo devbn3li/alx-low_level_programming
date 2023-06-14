@@ -16,7 +16,7 @@ char *str_concat(char *s1, char *s2)
 
 	if (s1 == NULL || s2 == NULL)
 	{
-		return NULL;
+		return (NULL);
 	}
 
 	len1 = strlen(s1);
@@ -40,5 +40,5 @@ char *str_concat(char *s1, char *s2)
 	}
 
 	concat_str[len1 + len2] = '\0';
-	return concat_str;
+	return (concat_str);
 }
