@@ -16,6 +16,11 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 	copy = malloc((int)strlen(str) + 1);
+
+	if (copy == NULL)
+	{
+		return (NULL);
+	}
 	for (i = 0; i < (int)strlen(str) + 1; i++)
 	{
 		copy[i] = str[i];
