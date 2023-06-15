@@ -13,9 +13,10 @@ int make_change(int cents)
 	{
 		return (0);
 	}
+	int coins, num_coins;
 
-	int coins[] = {25, 10, 5, 2, 1};
-	int num_coins = 0;
+	coins[] = {25, 10, 5, 2, 1};
+	num_coins = 0;
 
 	for (int i = 0; i < sizeof(coins) / sizeof(coins[0]); i++)
 	{
