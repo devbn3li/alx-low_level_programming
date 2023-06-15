@@ -40,7 +40,10 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 
-	int cents = atoi(argv[1]);
+	int cents;
+	int result;
+
+	cents = atoi(argv[1]);
 
 	if (cents < 0)
 	{
