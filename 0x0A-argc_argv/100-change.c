@@ -1,60 +1,45 @@
-#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * make_change - change function
- * @cents: cent num
- *
- * Return: num coins
- */
-int make_change(int cents)
-{
-	if (cents < 0)
-	{
-		return (0);
-	}
-	int coins, num_coins;
-
-	coins[] = {25, 10, 5, 2, 1};
-	num_coins = 0;
-
-	for (int i = 0; i < sizeof(coins) / sizeof(coins[0]); i++)
-	{
-		num_coins += cents / coins[i];
-		cents %= coins[i];
-	}
-
-	return num_coins;
-}
-/**
- * main - main function
+ * main - main func
  * @argc: arg count
  * @argv: arg vector
- *
- * Return: 0 if pass
+ * Return: 0 if success
  */
 int main(int argc, char *argv[])
 {
+	int position, total;
+	int change, aux;
+	int coins[] = {25, 10, 5, 2, 1};
+
+	position = total = change = aux = 0;
+
 	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
 
-	int cents;
-	int result;
+	total = atoi(argv[1]);
 
-	cents = atoi(argv[1]);
-
-	if (cents < 0)
+	if (total <= 0)
 	{
 		printf("0\n");
+		return (0);
 	}
-	else
+
+	while (coins[position] != '\0')
 	{
-		int result = make_change(cents);
-		printf("%d\n", result);
+		if (total >= coins[position])
+		{
+			aux = (total / coins[position]);
+			change += aux;
+			total -= coins[position] * aux;
+		}
+
+		position++;
 	}
+	printf("%d\n", change);
 
 	return (0);
 }
