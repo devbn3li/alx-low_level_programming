@@ -3,12 +3,12 @@
 /**
  * print_name - function print name
  * @name: string
- * f - ptr fun
+ * @cite: ptr fun
  * Return: void
  */
 void print_name(char *name, void (*f)(char *))
 {
-	if (f || name == NULL)
+	if ((f || name) == NULL)
 	{
 		return;
 	}
