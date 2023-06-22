@@ -8,10 +8,10 @@
  */
 int sum_them_all(const unsigned int n, ...)
 {
+	va_list Pn;
 	unsigned int i;
 	int sum = 0;
 
-	va_list Pn;
 	va_start(Pn, n);
 	if (n == 0)
 	{
