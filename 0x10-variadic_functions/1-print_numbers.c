@@ -4,7 +4,7 @@
 /**
  * print_numbers - function print numbers
  * @separator: comma
- * @int: number count
+ * @n: number count
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
