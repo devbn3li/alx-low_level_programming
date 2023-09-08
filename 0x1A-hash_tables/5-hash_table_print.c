@@ -5,7 +5,7 @@
  *
  * Description: Key//value pairs are printed in
  * the order they appear in the array
- * 		of the hash table
+ *              of the hash table
  */
 void hash_table_print(const hash_table_t *ht)
 {
